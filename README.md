@@ -12,9 +12,9 @@ The dataset used in this project is sourced from Kaggle: ["Cafe Sales Dirty Data
 1.  **Data Loading**: The dataset was downloaded from Kaggle using the `kagglehub` library and loaded into a pandas DataFrame.
 2.  **Data Cleaning**:
     *   Column names were cleaned by replacing spaces with underscores and capitalizing the first letter.
-    *   Data types for numerical and date columns were converted to appropriate types, handling errors by coercing invalid values to NaN.
-    *   'UNKNOWN' and 'ERROR' values in the dataset were replaced with NaN.
-    *   Missing values in 'Location' and 'Payment_method' were filled using the mode.
+    *   I converted numerical and date columns to appropriate types, handling errors by coercing invalid values to NaN.
+    *   I replaced 'UNKNOWN' and 'ERROR' values in the dataset with NaN.
+    *   I filled Missing values in 'Location' and 'Payment_method' using the mode.
     *   Missing 'Price_per_unit' values were imputed where possible using 'Total_spent' and 'Quantity'.
     *   Missing 'Item' values were imputed based on the calculated 'Price_per_unit'.
     *   Rows with missing values in columns with less than 10% missing data were dropped.
@@ -55,5 +55,3 @@ The dataset used in this project is sourced from Kaggle: ["Cafe Sales Dirty Data
 *   matplotlib
 *   seaborn
 *   missingno
-*   mplcursors
-*   plotly (although not used in the final plots, it was considered for interactive visualization)
